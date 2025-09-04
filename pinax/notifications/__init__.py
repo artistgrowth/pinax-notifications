@@ -1,4 +1,4 @@
-import pkg_resources
+from importlib.metadata import version
 
 default_app_config = "pinax.notifications.apps.AppConfig"
-__version__ = pkg_resources.get_distribution("pinax-notifications").version
+__version__ = version("pinax-notifications")
