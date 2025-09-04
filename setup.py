@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-VERSION = "6.0.0"
+VERSION = "6.0.0+ag.1"
 LONG_DESCRIPTION = """
 .. image:: http://pinaxproject.com/pinax-design/patches/pinax-notifications.svg
     :target: https://pypi.python.org/pypi/pinax-notifications/
@@ -91,10 +91,11 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.11',
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     install_requires=[
-        "django>=2.2",
+        "django>=4.1.3",
         "django-appconf>=1.0.1",
     ],
     tests_require=[
